@@ -16,6 +16,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
+import Link from '@material-ui/core/Link';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import AccountCircle from '@material-ui/icons/AccountCircle';
@@ -158,7 +159,7 @@ export default function MenuAppBar() {
           {['Contact', 'PhaseMatrix'].map((text, index) => (
             <ListItem button key={text}>
               <ListItemIcon>
-              {index % 2 === 0 ? <PersonIcon /> : <WebIcon href='https://www.phasematrixmedia.online' /> }
+              {index % 2 === 0 ? <PersonIcon /> : <WebIcon/>}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -168,7 +169,9 @@ export default function MenuAppBar() {
         <List>
           {['Github', 'Linkedin'].map((text, index) => (
             <ListItem button key={text}>
-              <ListItemIcon>{index % 2 === 0 ? <GitHubIcon href='https://github.com/PMatrixMedia'/> : <LinkedInIcon />}</ListItemIcon>
+              <ListItemIcon>
+              {index % 2 === 0 ?  <GitHubIcon /> : <LinkedInIcon />}
+              </ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
           ))}
