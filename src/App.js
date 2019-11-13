@@ -3,6 +3,7 @@ import 'aframe'
 import React, {Component} from 'react'
 import Menuappbar from './components/appbar/menuappbar';
 import VRscene from './components/vrscene/vrscene';
+import IframeComponent from './components/iframe';
 
 class App extends React.Component {
   render () {
@@ -11,8 +12,8 @@ class App extends React.Component {
       <div className='nav-bar'>
       <Menuappbar></Menuappbar>
       </div>
-      <div className='myEmbeddedScene'>
-      <VRscene></VRscene>
+      <div className='Virtual-Scene'>
+      <VRscene/>     
       </div>
       </React.Fragment> 
     );
