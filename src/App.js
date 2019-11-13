@@ -11,7 +11,7 @@ class App extends React.Component {
       <div className='nav-bar'>
       <Menuappbar></Menuappbar>
       </div>
-      <div className='Virtual-scene'>
+      <div className='myEmbeddedScene'>
       <VRscene></VRscene>
       </div>
       </React.Fragment> 
