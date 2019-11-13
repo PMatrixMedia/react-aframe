@@ -12,9 +12,9 @@ class App extends React.Component {
       <div className='nav-bar'>
       <Menuappbar></Menuappbar>
       </div>
-     
-      <VRscene></VRscene>     
-     
+      <div>
+      <VRscene></VRscene> 
+      </div>    
       </React.Fragment> 
     );
   }
